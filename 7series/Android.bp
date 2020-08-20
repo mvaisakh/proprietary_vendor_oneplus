@@ -20,6 +20,39 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libvraudio",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libvraudio.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libvraudio.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libvr_sam_wrapper",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libvr_sam_wrapper.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libplatformconfig",
 	owner: "oneplus",
 	strip: {

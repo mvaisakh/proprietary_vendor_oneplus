@@ -55,6 +55,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/7series/proprietary/lib/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti-perfd-client_system.so \
     vendor/oneplus/7series/proprietary/lib/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti-util_system.so \
     vendor/oneplus/7series/proprietary/lib/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti_performance.so \
+    vendor/oneplus/7series/proprietary/lib/libvr_amb_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvr_amb_engine.so \
+    vendor/oneplus/7series/proprietary/lib/libvr_object_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvr_object_engine.so \
+    vendor/oneplus/7series/proprietary/lib/libvr_sam_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvr_sam_wrapper.so \
+    vendor/oneplus/7series/proprietary/lib/libvraudio_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvraudio_client.qti.so \
     vendor/oneplus/7series/proprietary/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdaac.so \
     vendor/oneplus/7series/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
     vendor/oneplus/7series/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
@@ -89,6 +93,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/7series/proprietary/lib64/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-util_system.so \
     vendor/oneplus/7series/proprietary/lib64/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti_performance.so \
     vendor/oneplus/7series/proprietary/lib64/libseemore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libseemore.so \
+    vendor/oneplus/7series/proprietary/lib64/libvr_amb_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvr_amb_engine.so \
+    vendor/oneplus/7series/proprietary/lib64/libvr_object_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvr_object_engine.so \
+    vendor/oneplus/7series/proprietary/lib64/libvraudio_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvraudio_client.qti.so \
     vendor/oneplus/7series/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
     vendor/oneplus/7series/proprietary/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdcommonutils.so \
     vendor/oneplus/7series/proprietary/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdconfigutils.so \
@@ -2308,6 +2315,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/7series/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    libvraudio \
+    libvr_sam_wrapper \
     libplatformconfig \
     NxpNfcNci \
     NxpSecureElement \
